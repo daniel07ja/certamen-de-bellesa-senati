@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS cuentas_estudiantes (
+ id_senati VARCHAR(20) CHARACTER SET ascii COLLATE ascii_bin PRIMARY KEY,
+ votante_id INT UNSIGNED NOT NULL UNIQUE,
+ clave_hash VARCHAR(255) NOT NULL,
+ proximo_intento BIGINT UNSIGNED NOT NULL DEFAULT 0,
+ FOREIGN KEY (votante_id) REFERENCES votantes(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

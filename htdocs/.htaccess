@@ -1,0 +1,3 @@
+<FilesMatch "^(conexion|app)\.php$">
+    Require all denied
+</FilesMatch>

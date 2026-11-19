@@ -1,0 +1,3 @@
+<FilesMatch "^(?!logo-senati\.png$).+">
+    Require all denied
+</FilesMatch>

@@ -1,0 +1,5 @@
+/htdocs/conexion.php
+/htdocs/uploads/*
+!/htdocs/uploads/.htaccess
+.env
+.env.*
